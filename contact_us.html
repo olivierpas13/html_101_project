@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Olivier Paspuel" />
+    <meta name="description" content="Contact us" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact us</h1>
+      <nav>
+        <ul>
+          <li><a href="/home.html">Home</a></li>
+          <li><a href="/home.html#about_us">About us</a></li>
+          <li><a href="/home.html#flower_types">Available flowers</a></li>
+          <li><a href="/orders.html">Orders</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <figure>
+        <img src="/img/tulipanes1.jpeg" alt="Knitted tulips" width="500" />
+        <figcaption>For that special person &lt;3</figcaption>
+      </figure>
+      <br />
+      <article id="contact_form">
+        <h3>Contact form</h3>
+        <form action="https://httpbin.org/get" method="post">
+          <br />
+          <fieldset>
+            <legend>Send us a message or request</legend>
+            <p>
+              <label for="name">First name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+                autocomplete="on"
+                required
+              />
+            </p>
+            <p>
+              <label for="last_name">Last name</label>
+              <input
+                type="text"
+                name="last_name"
+                id="last_name"
+                placeholder="Enter your last name"
+                autocapitalize="on"
+                autocomplete="on"
+                required
+              />
+            </p>
+            <p>
+              <label for="messageOrRequest">Message or request</label>
+              <br />
+              <textarea
+                name="messageOrRequest"
+                id="messageOrRequest"
+                cols="90"
+                rows="7"
+                placeholder="Enter your request or message here"
+              ></textarea>
+            </p>
+            <p>
+                Select the type of text:
+                <br>
+                <input type="radio" name="typeOfMessage" id="messageType" value="messageType">
+                <label for="messageType">Message</label>
+            </p>
+            <p>
+                <input type="radio" name="typeOfMessage" id="requestType" value="requestType">
+                <label for="requestType">Request</label>
+            </p>
+          </fieldset>
+          <button type="submit" formaction="https://httpbin.org/post">
+            Submit
+          </button>
+        </form>
+      </article>
+      <article>
+        <div>
+            <h3>Our location</h3>
+            <p>
+                <address>Ecuador, Quito</address>
+            </p>
+            <p>
+                <strong>Phone:</strong>  <a href="tel: 555-555-5555">555-555-5555</a>
+            </p>
+        </div>
+      </article>
+      <br>
+      <footer>
+        <div>
+            <a href="#">Back to top</a>
+        </div>
+        <hr>
+        <p>
+            Copyright &copy; Knitted Flowers
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
